@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField]
-	private float _speed = 3;
+private float _speed = 3;
  
     private Vector3 moveDirection = Vector3.zero;
     public GameObject player;
@@ -46,7 +46,9 @@ public class PlayerMovement : MonoBehaviour
 			}
             moveDirection *= _speed;
             if (Input.GetButton("Jump"))
+				//_anim.SetTrigger("Jump");
                 moveDirection.y = jumpSpeed;
+				
         }
         moveDirection.y -= gravity * Time.deltaTime;
         _controller.Move(moveDirection * Time.deltaTime);
