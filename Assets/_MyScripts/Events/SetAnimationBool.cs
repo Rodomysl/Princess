@@ -7,8 +7,13 @@ namespace MyEngine
     // устанавливает булевскую переменную в аниматоре
     public class SetAnimationBool : MonoBehaviour
     {
+        [Header("Переменная в аниматоре")]
         public string VariableName;
+
+        [Header("Установить значение переменной")]
         public bool Value;
+
+        [Header("Аниматор")]
         public Animator Anim;
 
         private void Start()

@@ -10,7 +10,10 @@ namespace MyEngine
     [RequireComponent(typeof(Collider))]
     public class MouseClickEvent : MonoBehaviour
     {
+        [Header("Задержка между кликами")]
         public float DelayClick = 1f;
+
+        [Space]
         public UnityEvent OnMouseClick;
 
         private bool isClick = false;
