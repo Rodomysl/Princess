@@ -1,9 +1,12 @@
 ﻿using System.Collections;
+using System.IO;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Treasure : Interactable {
 
+
+	public UI UI;
 	Animator animator;
 
 	bool isOpen;
@@ -31,5 +34,15 @@ public class Treasure : Interactable {
 		foreach (Item i in items) {
 			Inventory.instance.Add (i);
 		}
+
+
+		
+
 	}
+
+
+
+
 }
+
+

@@ -19,6 +19,7 @@ public class Interactable : MonoBehaviour {
 	bool hasInteracted = false;	// Have we already interacted with the object?
 	private Animator _anim;
 
+
 	void Update ()
 	{
 		
@@ -70,8 +71,7 @@ public class Interactable : MonoBehaviour {
 				_anim.SetBool("Open", true);
 			}
 				
-			
-			
+
 		}
 	}
 

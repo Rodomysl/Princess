@@ -38,12 +38,19 @@ public class PlayerMovement : MonoBehaviour
            _anim.SetBool("Run", isRunning);
      
             moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-            
+            /*
 			if (Input.anyKey)
 			{
 				player.transform.rotation = Quaternion.RotateTowards(player.transform.rotation, Quaternion.LookRotation(moveDirection), turnSpeed * Time.deltaTime);        
 
+			}*/
+            // some fix
+            if (moveDirection != Vector3.zero)
+			{
+				player.transform.rotation = Quaternion.RotateTowards(player.transform.rotation, Quaternion.LookRotation(moveDirection), turnSpeed * Time.deltaTime);        
+
 			}
+
             moveDirection *= _speed;
             if (Input.GetButton("Jump"))
 				//_anim.SetTrigger("Jump");
