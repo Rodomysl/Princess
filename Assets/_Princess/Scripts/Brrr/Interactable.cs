@@ -17,15 +17,10 @@ public class Interactable : MonoBehaviour {
 	Transform player;		// Reference to the player transform
 
 	bool hasInteracted = false;	// Have we already interacted with the object?
-	
+	private Animator _anim;
 
 	void Update ()
 	{
-		
-		
-			
-		
-		
 		
 		if (isFocus)	// If currently being focused
 		{
@@ -60,6 +55,24 @@ public class Interactable : MonoBehaviour {
 	public virtual void Interact ()
 	{
 		Debug.Log("INTERACT");
+		
+		if (this.gameObject.CompareTag("Prince")){
+			Debug.Log("This is the PRINCE!");
+		}
+		
+		if (this.gameObject.CompareTag("Door"))
+		{
+			_anim = GetComponentInParent<Animator>();
+			if (_anim.GetBool("Open"))
+			{
+				_anim.SetBool("Open", false);
+			} else {
+				_anim.SetBool("Open", true);
+			}
+				
+			
+			
+		}
 	}
 
 	void OnDrawGizmosSelected ()

@@ -6,6 +6,9 @@ TagManager:
   tags:
   - MAST_Holder
   - Interactable
+  - Door
+  - Prince
+  - Body
   layers:
   - Default
   - TransparentFX

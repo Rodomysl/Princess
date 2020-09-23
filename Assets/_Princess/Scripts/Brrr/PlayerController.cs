@@ -4,7 +4,7 @@ using UnityEngine.EventSystems;
 
 /* Controls the player. Here we chose our "focus" and where to move. */
 
-[RequireComponent(typeof(PlayerMotor))]
+//[RequireComponent(typeof(PlayerMotor))]
 public class PlayerController : MonoBehaviour {
 
 	public delegate void OnFocusChanged(Interactable newFocus);
@@ -20,11 +20,13 @@ public class PlayerController : MonoBehaviour {
 	
 	private Interactable _previousSelection;
 	private Interactable selection;
+	
+	public int collectedCrowns = 0;
 
 	// Get references
 	void Start ()
 	{
-		motor = GetComponent<PlayerMotor>();
+		//motor = GetComponent<PlayerMotor>();
 		cam = Camera.main;
 	}
 
@@ -56,7 +58,7 @@ public class PlayerController : MonoBehaviour {
 		
 
 		// If we press left mouse
-		if (Input.GetMouseButtonDown(0))
+/* 		if (Input.GetMouseButtonDown(0))
 		{
 			// Shoot out a ray
 			Ray ray = cam.ScreenPointToRay(Input.mousePosition);
@@ -69,10 +71,10 @@ public class PlayerController : MonoBehaviour {
 
 				SetFocus(null);
 			}
-		}
+		} */
 
 		// If we press right mouse
-		if (Input.GetMouseButtonDown(1))
+		if (Input.GetMouseButtonDown(0))
 		{
 			// Shoot out a ray
 			Ray ray = cam.ScreenPointToRay(Input.mousePosition);
@@ -82,6 +84,7 @@ public class PlayerController : MonoBehaviour {
 			if (Physics.Raycast(ray, out hit, 100f, interactionMask))
 			{
 				SetFocus(hit.collider.GetComponent<Interactable>());
+				//motor.MoveToPoint(hit.point);
 			}
 		}
 
