@@ -22267,6 +22267,7 @@ GameObject:
   - component: {fileID: 919417252}
   - component: {fileID: 919417251}
   - component: {fileID: 919417250}
+  - component: {fileID: 919417256}
   m_Layer: 10
   m_Name: Prince
   m_TagString: Prince
@@ -24805,6 +24806,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &919417256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919417249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 516ecc4f2aed68e4ab047cc4c3a31497, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 3
+  interactionTransform: {fileID: 0}
+  items:
+  - {fileID: 11400000, guid: 3ea4d64f34a2e68428316b6a09e0a4eb, type: 2}
 --- !u!1001 &922798348
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48642,6 +48659,7 @@ MonoBehaviour:
   interactionMask:
     serializedVersion: 2
     m_Bits: 1024
+  collectedCrowns: 0
 --- !u!114 &1905646600
 MonoBehaviour:
   m_ObjectHideFlags: 0
