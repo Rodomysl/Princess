@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField]
-private float _speed = 3;
+    [SerializeField] private float _speed = 3;
  
     private Vector3 moveDirection = Vector3.zero;
     public GameObject player;
@@ -14,6 +13,7 @@ private float _speed = 3;
     public float gravity = 20.0f;
     private Animator _anim;
     private CharacterController _controller;
+	
  
  
     // Start is called before the first frame update
@@ -52,7 +52,10 @@ private float _speed = 3;
         }
         moveDirection.y -= gravity * Time.deltaTime;
         _controller.Move(moveDirection * Time.deltaTime);
+		
+		
  
     }
+	
  
 }
