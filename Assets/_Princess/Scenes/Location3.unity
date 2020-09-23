@@ -52352,72 +52352,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5424184272758713560, guid: 3750a414ae72de74c9d4a83843ca231c, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 610
-      objectReference: {fileID: 0}
-    - target: {fileID: 5424184272758713560, guid: 3750a414ae72de74c9d4a83843ca231c, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -15
-      objectReference: {fileID: 0}
-    - target: {fileID: 5424184272758713560, guid: 3750a414ae72de74c9d4a83843ca231c, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5424184272758713567, guid: 3750a414ae72de74c9d4a83843ca231c, type: 3}
-      propertyPath: m_text
-      value: 'Salut, ma cherie! I have no idea how many times you''ve already read
-        this letter. Dont'' be afraid, I am you some time ago. I know you''ve expected
-        to find a way out to leave the damned castle and run away from the dragon.
-        Alas, it''s not the way it looks like.
-
-
-        By the way, what did the
-        Door ask you to collect this time? Fingers? Crowns? Rats'' tails? No offence
-        meant, but you could just open the Door. At any moment. It''s not truly talking,
-        though.
-
-
-        You see, I don''t remember what happaned to us, who cursed
-        us either. But accidentally I''ve found out the truth and now you have to
-        face it as well. There is no dragon. And it never was. To be more precise,
-        there is no dragon apart from us. Yes, we are the dragon. Me and you. We
-        turn into it and I don''t know how frequently. Then, we shift back to human
-        form and remember almost nothing. We are trying to escape, to write promising
-        letters to princes begging for rescue. But salvation is unreachable, so we
-        find them and their knights roasted in their armor. Time after time.
-
-
-        I
-        know what you''re thinking right know. I''m in a fairy tale, so there should
-        be some remedy to break the curse. Maybe, a kiss of love? Or a potion? Believe
-        me,dear, we''ve tried everything. The truth is merciless. We never part with
-        it.
-
-        That''s why we are here. We imprisoned ourselves. So now we
-        have been wandering alone starving and sinking in our inevitable insanity.
-        A pie with a crisp of amnesia stuffed with all the evil we''ve done.
-
-
-        Sorry,
-        you surely get upset. But don''t worry, you''ll turn to dragon soon and it
-        will wash away. But now...please, write some more letters to princes. Rats
-        seem to become more and more resistant to the stupid pipe.
-
-
-        P.S
-        Rats are still talking to you, aren''t they? Listen to them carefully, they
-        swear there is a secret room full of cheese in the castle. Can you imagine?
-        A chamber full of delicious cheese!"'
-      objectReference: {fileID: 0}
-    - target: {fileID: 5424184272758713567, guid: 3750a414ae72de74c9d4a83843ca231c, type: 3}
-      propertyPath: m_pageToDisplay
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5424184273721634060, guid: 3750a414ae72de74c9d4a83843ca231c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5424184273788005976, guid: 3750a414ae72de74c9d4a83843ca231c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -52506,10 +52440,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
-    - target: {fileID: 5424184273985802734, guid: 3750a414ae72de74c9d4a83843ca231c, type: 3}
-      propertyPath: m_text
-      value: 1 of 4
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3750a414ae72de74c9d4a83843ca231c, type: 3}
 --- !u!1001 &5147997813643050856
@@ -52565,10 +52495,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5147997813634144980, guid: acf940ea046d1494db585e9dd2f2fb73, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5382381731788681933, guid: acf940ea046d1494db585e9dd2f2fb73, type: 3}
-      propertyPath: m_ApplyRootMotion
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

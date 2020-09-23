@@ -169,8 +169,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 9, y: -10}
-  m_SizeDelta: {x: 680, y: 800}
+  m_AnchoredPosition: {x: 0, y: -15}
+  m_SizeDelta: {x: 610, y: 800}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5424184272758713566
 CanvasRenderer:
@@ -201,12 +201,46 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: 'Salut, ma cherie! I have no idea how many times you''ve already read this
-    letter. No reason for fear, I am you, but some time ago. I know you''ve expected
-    to find a way out to leave the damned tower and run away from the dragon. Alas,
-    it''s not the way it looks like. By the way, '
+    letter. Don''t be afraid, I am you some time ago. I know you''ve expected to
+    find a way out to leave the damned castle and run away from the dragon. Alas,
+    it''s not the way it looks like.
+
+
+    By the way, what did the Door ask you
+    to collect this time? Fingers? Crowns? Rats'' tails? In fact, you could just
+    open the Door. At any moment. It''s not truly talking, though.
+
+
+    You have
+    to face the truth There is no dragon. And it never was. To be more precise, there
+    is no dragon apart from us. We are the dragon. Me and you. We turn into it occasionally.
+    Then, we shift back to human form and remember almost nothing. We are trying
+    to escape, to write promising letters to princes begging for rescue. But salvation
+    is unreachable.
+
+
+    I know what you''re thinking right know. I''m in a fairy
+    tale, so there should be some remedy for everything. Maybe, a kiss of love? Or
+    a potion? Believe me,dear, we''ve tried everything. The truth is merciless. We
+    never get free...
+
+
+    That''s why we are here. We imprisoned ourselves. So
+    now we have been wandering alone starving and sinking in our inevitable insanity.
+    A pie with a crisp of amnesia stuffed with all the evil we''ve done.
+
+
+    Sorry,
+    you surely get upset. But don''t worry, you''ll turn to dragon soon and it will
+    be washed away.
+
+
+    P.S. Rats are still talking to you, aren''t they? Listen
+    to them carefully, they swear there is a secret room full of cheese in the castle.
+    Can you imagine? A chamber full of delicious cheese!'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9c34c5560d2242e4ea08bad6c3c701dd, type: 2}
-  m_sharedMaterial: {fileID: 4932997789871813421, guid: 9c34c5560d2242e4ea08bad6c3c701dd, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 14cf7bfacef0b62488717b018a3c92cf, type: 2}
+  m_sharedMaterial: {fileID: -5435465405629088012, guid: 14cf7bfacef0b62488717b018a3c92cf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -230,8 +264,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -549,10 +583,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1 of 12
+  m_text: '1 of 3
+
+'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9c34c5560d2242e4ea08bad6c3c701dd, type: 2}
-  m_sharedMaterial: {fileID: 4932997789871813421, guid: 9c34c5560d2242e4ea08bad6c3c701dd, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 14cf7bfacef0b62488717b018a3c92cf, type: 2}
+  m_sharedMaterial: {fileID: -5435465405629088012, guid: 14cf7bfacef0b62488717b018a3c92cf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -576,8 +612,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
