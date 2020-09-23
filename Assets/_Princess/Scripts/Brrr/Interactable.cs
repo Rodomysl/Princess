@@ -18,7 +18,7 @@ public class Interactable : MonoBehaviour {
 
 	bool hasInteracted = false;	// Have we already interacted with the object?
 	private Animator _anim;
-
+	public Treasure Prince;
 
 	void Update ()
 	{
@@ -59,6 +59,7 @@ public class Interactable : MonoBehaviour {
 		
 		if (this.gameObject.CompareTag("Prince")){
 			Debug.Log("This is the PRINCE!");
+			Prince.Interact();
 		}
 		
 		if (this.gameObject.CompareTag("Door"))
@@ -71,7 +72,6 @@ public class Interactable : MonoBehaviour {
 				_anim.SetBool("Open", true);
 			}
 				
-
 		}
 	}
 

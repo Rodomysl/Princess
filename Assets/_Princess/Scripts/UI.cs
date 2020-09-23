@@ -11,7 +11,7 @@ public class UI : MonoBehaviour
     private int currPage = 1;
     public TMP_Text Pages, pageNum;
     public GameObject Panel;
-    public int maxPages;
+    private int maxPages;
 
 
     private void Start() {
@@ -26,13 +26,13 @@ public class UI : MonoBehaviour
         
     }
 
-    public void SetPages(int pages, string text) //enter text
+    public void SetPages(int pagesCount, string text) //enter text
     {
         Panel.SetActive(true);
         Pages.text = text;
         currPage = 1;
         Pages.pageToDisplay = currPage;
-        maxPages = pages;
+        maxPages = pagesCount;
         
     }
 
