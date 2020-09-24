@@ -15,7 +15,8 @@ public class UI : MonoBehaviour
     private Treasure currTreasure;
 
     public void setCrown(int count){
-
+        Debug.Log(count + "crowcount");
+        Debug.Log(crownCounter.text);
         crownCount = count;
         crownCounter.text = crownCount.ToString();
     }
@@ -29,19 +30,22 @@ public class UI : MonoBehaviour
     }
 
     private void Start() {
-        crownCounter.text = crownCount.ToString();
+        //crownCounter.text = crownCount.ToString();
+        //Debug.Log(crownCounter.text +"start");
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        //Debug.Log(crownCount + "update");
     }
 
     public void SetPages(int pagesCount, string text) //enter text
     {
         Debug.Log("SetPages");
         currTreasure.animator.SetBool ("OpenLetter", true);
+
         //Panel.SetActive(true);
         Pages.text = text;
         currPage = 1;

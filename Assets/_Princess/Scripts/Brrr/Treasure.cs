@@ -28,6 +28,8 @@ public class Treasure : Interactable {
 	{
 		//base.Interact ();
 		if (!isOpen) {
+			//Debug.Log(UI.getCrown() + "crown treasure");
+			//Debug.Log(animator);
 			if (isCrown) UI.setCrown(UI.getCrown()+1);
 			UI.setTreasure(this);
 			UI.SetPages(pageCount, letter.text);

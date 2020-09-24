@@ -10,7 +10,7 @@ public class Main : MonoBehaviour
     public GameObject[] spawnPoints;
     static private int spawnNum = 0;
     public TMP_Text crowns;
-    public GameObject PauseScreen, spawnPoint, Player;
+    public GameObject PauseScreen, Player;
 
 
     // Start is called before the first frame update
