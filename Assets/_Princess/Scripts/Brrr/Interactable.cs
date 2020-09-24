@@ -19,6 +19,7 @@ public class Interactable : MonoBehaviour {
 	bool hasInteracted = false;	// Have we already interacted with the object?
 	private Animator _anim;
 	public Treasure Prince;
+	//public int letterCount;
 
 	void Update ()
 	{

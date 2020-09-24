@@ -10,22 +10,24 @@ public class Treasure : Interactable {
 
 	public UI UI;
 	public int pageCount; 
-	Animator animator;
+	public Animator animator;
 
-	bool isOpen;
+	bool isOpen = false;
 	public Item[] items;
 	public Text letter;
 	
 
 	void Start() {
-		animator = GetComponent<Animator> ();
+		//animator = GetComponent<Animator> ();
 	}
 
 	public override void Interact ()
 	{
 		//base.Interact ();
 		if (!isOpen) {
-			//animator.SetTrigger ("Open");
+			UI.setTreasure(this);
+			UI.SetPages(pageCount, letter.text);
+			//animator.SetTrigger ("OpenLetter");
 			StartCoroutine (CollectTreasure ());
 		}
 	}
@@ -34,8 +36,8 @@ public class Treasure : Interactable {
 
 		isOpen = true;
 		
-
-		
+		Debug.Log("ITS TREASURE");
+			
 
 		yield return new WaitForSeconds (1f);
 		print ("Chest opened");
@@ -43,13 +45,12 @@ public class Treasure : Interactable {
 			Inventory.instance.Add (i);
 		}*/
 		yield return new WaitForSeconds (2f);
-		UI.SetPages(pageCount, letter.text);
-
-		
 
 	}
 
-
+	public void SetAnim(string parametr){
+		animator.SetTrigger (parametr);
+	}
 
 
 }
