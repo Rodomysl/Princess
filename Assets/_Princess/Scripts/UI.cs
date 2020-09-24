@@ -7,23 +7,31 @@ using TMPro;
 public class UI : MonoBehaviour
 {
 
-
-    private int currPage = 1;
-    public TMP_Text Pages, pageNum;
+    
+    public TMP_Text Pages, pageNum, crownCounter;
     public GameObject Panel;
-    private int maxPages;
+    public Main main;
+    private int currPage = 1, maxPages, crownCount = 0;
     private Treasure currTreasure;
+
+    public void setCrown(int count){
+
+        crownCount = count;
+        crownCounter.text = crownCount.ToString();
+    }
+
+    public int getCrown(){
+        return crownCount;
+    }
 
     public void setTreasure(Treasure treasure){
         currTreasure = treasure;
     }
 
     private void Start() {
-
-        
-       
-        
+        crownCounter.text = crownCount.ToString();
     }
+
     // Update is called once per frame
     void Update()
     {

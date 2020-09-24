@@ -11,10 +11,13 @@ public class Treasure : Interactable {
 	public UI UI;
 	public int pageCount; 
 	public Animator animator;
+	public bool isCrown = true;
+
 
 	bool isOpen = false;
 	public Item[] items;
 	public Text letter;
+	
 	
 
 	void Start() {
@@ -25,6 +28,7 @@ public class Treasure : Interactable {
 	{
 		//base.Interact ();
 		if (!isOpen) {
+			if (isCrown) UI.setCrown(UI.getCrown()+1);
 			UI.setTreasure(this);
 			UI.SetPages(pageCount, letter.text);
 			//animator.SetTrigger ("OpenLetter");

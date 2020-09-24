@@ -6,7 +6,11 @@ using UnityEngine.SceneManagement;
 public class CollisonSceneChange : MonoBehaviour {
 
 	[SerializeField]
+    
 	private int loadScene = 0;
+    public int spawnNum = 0;
+
+    public Main mainScr;
 
     // Start is called before the first frame update
     void Start() 
@@ -19,10 +23,13 @@ public class CollisonSceneChange : MonoBehaviour {
 
     }
     void OnTriggerEnter(Collider col) { 
-		if (col.gameObject.name == "Character")
+		if (col.gameObject.tag == "Player")
 		{
             //Debug.Log("Collision Detected It Works");
-            SceneManager.LoadScene(loadScene);
+            //SceneManager.LoadScene(loadScene);
+            mainScr.setSpawn(spawnNum);
+            mainScr.Open_Scene(loadScene);
+
         }
     }
 
