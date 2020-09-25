@@ -9,6 +9,7 @@ TagManager:
   - Door
   - Prince
   - Body
+  - MainDoor
   layers:
   - Default
   - TransparentFX
