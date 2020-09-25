@@ -8,6 +8,7 @@ public class UI : MonoBehaviour
 {
 
     
+    public SoundEffector sounds;
     public TMP_Text Pages, pageNum, crownCounter;
     public GameObject Panel;
     public Main main;
@@ -15,8 +16,8 @@ public class UI : MonoBehaviour
     private Treasure currTreasure;
 
     public void setCrown(int count){
-        Debug.Log(count + "crowcount");
-        Debug.Log(crownCounter.text);
+       // Debug.Log(count + "crowcount");
+        //Debug.Log(crownCounter.text);
         crownCount = count;
         crownCounter.text = crownCount.ToString();
     }
@@ -45,7 +46,7 @@ public class UI : MonoBehaviour
     {
         Debug.Log("SetPages");
         currTreasure.animator.SetBool ("OpenLetter", true);
-
+        sounds.PlayLetterSound();
         //Panel.SetActive(true);
         Pages.text = text;
         currPage = 1;

@@ -12,6 +12,7 @@ public class Treasure : Interactable {
 	public int pageCount; 
 	public Animator animator;
 	public bool isCrown = true;
+	public SoundEffector sound;
 
 
 	bool isOpen = false;
@@ -32,6 +33,7 @@ public class Treasure : Interactable {
 			//Debug.Log(animator);
 			if (isCrown) UI.setCrown(UI.getCrown()+1);
 			UI.setTreasure(this);
+			sound.PlayLetterSound();
 			UI.SetPages(pageCount, letter.text);
 			//animator.SetTrigger ("OpenLetter");
 			StartCoroutine (CollectTreasure ());

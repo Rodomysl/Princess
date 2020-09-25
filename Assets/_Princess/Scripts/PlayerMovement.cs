@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public float gravity = 20.0f;
     private Animator _anim;
     private CharacterController _controller;
+    public AudioSource FootstepsSource;
 	
  
  
@@ -37,6 +38,12 @@ public class PlayerMovement : MonoBehaviour
  
            _anim.SetBool("Run", isRunning);
      
+            if(isRunning){
+            //    Debug.Log("WalkingSound");
+                PlayWalkSound();
+            }
+                else StopWalkSound();
+
             moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
             /*
 			if (Input.anyKey)
@@ -48,7 +55,6 @@ public class PlayerMovement : MonoBehaviour
             if (moveDirection != Vector3.zero)
 			{
 				player.transform.rotation = Quaternion.RotateTowards(player.transform.rotation, Quaternion.LookRotation(moveDirection), turnSpeed * Time.deltaTime);        
-
 			}
 
             moveDirection *= _speed;
@@ -57,6 +63,10 @@ public class PlayerMovement : MonoBehaviour
 				_anim.SetTrigger("Jump");
                 moveDirection.y = jumpSpeed;
 			}
+
+            //    Debug.Log(isRunning);
+            
+            
 				
 				
         }
@@ -67,5 +77,20 @@ public class PlayerMovement : MonoBehaviour
  
     }
 	
+       public void PlayWalkSound(){ 
+        FootstepsSource.enabled = true;
+        }
+
+         IEnumerator Waiting(float time)
+         {
+             yield return new WaitForSeconds(time);
+             FootstepsSource.enabled = false;
+         }
+  
+        public void StopWalkSound(){
+           StartCoroutine(Waiting(0.2f));
+    }
+
+
  
 }
