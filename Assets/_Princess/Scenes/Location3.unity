@@ -47195,6 +47195,17 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: a60b6ae4518547e4e9e57b601c817ca7, type: 2}
+    - target: {fileID: 4367174196713647483, guid: 910959aa865ff62439b3de5a98577327, type: 3}
+      propertyPath: m_Text
+      value: "My charming prince! I've been languishing and withering in the grim
+        castle guarded by the bloodthirsty dragon for so long! \nI am waiting for
+        you, my darling! I believe it is you who is destined for me! Come and do
+        the deed only you can perform, slay the monster and rescue the poor captive!
+        \nI'll thank you the way beyond the boldest dreams of yours, my sweetheart!
+        \nI beg you, please, hasten, for the dragon can kill me in any moment! You
+        can find my castle in Osterburg county northeast of the the Fallens mountains.
+        Tell the the local peasants to show you the way."
+      objectReference: {fileID: 0}
     - target: {fileID: 4367174197415473728, guid: 910959aa865ff62439b3de5a98577327, type: 3}
       propertyPath: UI
       value: 
@@ -47207,6 +47218,10 @@ PrefabInstance:
       propertyPath: sound
       value: 
       objectReference: {fileID: 277362838}
+    - target: {fileID: 4367174197415473728, guid: 910959aa865ff62439b3de5a98577327, type: 3}
+      propertyPath: pageCount
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 910959aa865ff62439b3de5a98577327, type: 3}
 --- !u!114 &2125875837 stripped
