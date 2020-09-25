@@ -53,7 +53,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: DoorFirstText
+    m_ConditionEvent: DoorFirst
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 9119284629518316925}
@@ -107,7 +107,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: DoorFinishText
+    m_ConditionEvent: DoorFinish
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1821096835062226820}
@@ -132,19 +132,19 @@ AnimatorController:
   m_Name: DoorTexts
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: DoorFirstText
+  - m_Name: DoorFirst
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: DoorMoreText
+  - m_Name: DoorMore
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: DoorFinishText
+  - m_Name: DoorFinish
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -230,7 +230,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: DoorMoreText
+    m_ConditionEvent: DoorMore
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 6625537803844693751}
