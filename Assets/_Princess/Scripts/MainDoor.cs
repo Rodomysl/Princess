@@ -41,15 +41,15 @@ public class MainDoor : MonoBehaviour
         else if(ui.getCrown() == 6)
         {
             animator.SetTrigger("DoorFinish");
-            StartCoroutine(Waiting());
+           // StartCoroutine(Waiting());
         }
             
     }
 
-
+/*
     IEnumerator Waiting()
     {
         yield return new WaitForSeconds(3.0f);
         player.setMutation();
-    }
+    }*/
 }

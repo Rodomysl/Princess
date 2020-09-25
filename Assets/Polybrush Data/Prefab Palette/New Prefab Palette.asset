@@ -127,7 +127,7 @@ MonoBehaviour:
     name: Book_Big_DeepRed
   - gameObject: {fileID: 4514716565785830676, guid: 52cfc34cb5ec6b84bb03dc381684a09a, type: 3}
     settings:
-      m_Strength: 50
+      m_Strength: 87.79452
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
       m_RotationRangeMax: {x: 360, y: 360, z: 360}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
@@ -159,7 +159,7 @@ MonoBehaviour:
     name: Book_Big_Red
   - gameObject: {fileID: 3121784523027434661, guid: 20dc69066f16acc48b952aed5b788376, type: 3}
     settings:
-      m_Strength: 50
+      m_Strength: 89.48972
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
       m_RotationRangeMax: {x: 360, y: 360, z: 360}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
@@ -223,7 +223,7 @@ MonoBehaviour:
     name: Book_Open
   - gameObject: {fileID: 4392081859372299703, guid: 049d090c06dfbaf45959b2022ee91789, type: 3}
     settings:
-      m_Strength: 50
+      m_Strength: 100
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
       m_RotationRangeMax: {x: 360, y: 360, z: 360}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
@@ -239,7 +239,7 @@ MonoBehaviour:
     name: Book_Red
   - gameObject: {fileID: 7775020269772032150, guid: cd2c04b39e3823a47a81bb93247b2d67, type: 3}
     settings:
-      m_Strength: 50
+      m_Strength: 100
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
       m_RotationRangeMax: {x: 360, y: 360, z: 360}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}

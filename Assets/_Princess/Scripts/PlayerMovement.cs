@@ -7,16 +7,17 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float _speed = 3;
  
     private Vector3 moveDirection = Vector3.zero;
-    public GameObject player;
+    public GameObject player, dragon;
     public float turnSpeed = 180f;
     public float jumpSpeed = 8.0f;
     public float gravity = 20.0f;
-    public Animator girlAnim, animDragon, animTrans;
+
     private Animator _anim;
     private CharacterController _controller;
 
     public AudioSource FootstepsSource;
     public bool isDragon = false;
+    public Transform MutPoint;
     
 	
  
@@ -28,6 +29,7 @@ public class PlayerMovement : MonoBehaviour
         //_anim = girlAnim;
         _controller = GetComponent<CharacterController>();
         isDragon = false;
+        gameObject.SetActive(true);
     }
 
 
@@ -79,13 +81,26 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-    public void setMutation(){
+    /*public void setMutation(){
         Debug.Log("Mutation");
-        isDragon = true;
+        Instantiate(dragon, MutPoint.position, new Quaternion(0.0f, 0.0f,0.0f,0.0f));
+        gameObject.SetActive(false);
        // _anim = animTrans;
-        _anim.SetTrigger("Mutation");
+       // _anim.SetTrigger("Mutation");
 
 
+    }*/
+
+
+    
+    private void OnTriggerEnter(Collider other) {
+        
+        if(other.gameObject.tag == "MutationPoint"){
+             player.transform.position = Vector3.MoveTowards(player.transform.position, other.gameObject.transform.position, 0.1f);
+             player.transform.position = other.gameObject.transform.position;
+             Instantiate(dragon, other.gameObject.transform.position,  new Quaternion(0.0f, 0.0f,0.0f,0.0f));
+            gameObject.SetActive(false);
+        }
     }
 	
        public void PlayWalkSound(){ 

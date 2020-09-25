@@ -17,7 +17,8 @@ public class Main : MonoBehaviour
     void Start()
     {
         Instantiate(Player, spawnPoints[spawnNum].transform.position, new Quaternion(0.0f, 0.0f,0.0f,0.0f));
-        
+        Player.SetActive(true);
+    
     }
 
     // Update is called once per frame
