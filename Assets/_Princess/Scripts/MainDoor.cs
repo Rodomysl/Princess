@@ -32,8 +32,10 @@ public class MainDoor : MonoBehaviour
 
     public void show()
     {
-        if (isFirstTime && ui.getCrown() < 6)
+        if (isFirstTime && ui.getCrown() < 6){
             animator.SetTrigger("DoorFirst");
+            isFirstTime = false;
+        }
         else if(ui.getCrown() < 6)
             animator.SetTrigger("DoorMore");
         else if(ui.getCrown() == 6)
