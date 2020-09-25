@@ -41,6 +41,7 @@ public class Treasure : Interactable {
 	IEnumerator CollectTreasure() {
 
 		isOpen = true;
+		this.GetComponentInChildren<MeshRenderer>().enabled = false;
 		
 		Debug.Log("ITS TREASURE");
 			

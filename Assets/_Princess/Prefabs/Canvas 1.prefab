@@ -1317,7 +1317,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoints:
-  - {fileID: 0}
+  - {fileID: 4118150352075170456, guid: 95653dd277476714e9cdb6ece9d423da, type: 3}
+  - {fileID: 5843928298560713166, guid: bcfa8d9694c88594ab6141ce57901f5f, type: 3}
+  - {fileID: 1221155130368017413, guid: 4f6bc0663390ed643ac5d6b429ac6878, type: 3}
+  - {fileID: 3126113736229618582, guid: 673ccf6ed26abd241b2af7f11612ded2, type: 3}
+  - {fileID: 3079516973456842992, guid: 73783ee9f7f8f824f848a43a67809710, type: 3}
+  - {fileID: 5905808518007518519, guid: e33aa700c26f38945acb0407d2718e83, type: 3}
+  - {fileID: 4659884807485237594, guid: c5974c29d4a91704c91dcb1e6022bde0, type: 3}
+  - {fileID: 422539180006134090, guid: 48c65b067441dbd4bb813930ef68039d, type: 3}
+  - {fileID: 4119753546520974719, guid: 56b400e3c7303e24d998d32a744715fc, type: 3}
+  - {fileID: 3521273379523615777, guid: 31c0208084545174a9f85864c71b5b9e, type: 3}
+  - {fileID: 897848666632558407, guid: dce1a8a5beea97043aa476679e18ff74, type: 3}
+  - {fileID: 55563629862116204, guid: f7af2b0e6f49800408cc5649af81ca98, type: 3}
+  - {fileID: 5246167114099112280, guid: 8d60559a747ff5146a879f87048187fe, type: 3}
   crowns: {fileID: 4183765056538444432}
   PauseScreen: {fileID: 4183765057496220631}
   Player: {fileID: 5147997813634144977, guid: acf940ea046d1494db585e9dd2f2fb73, type: 3}
