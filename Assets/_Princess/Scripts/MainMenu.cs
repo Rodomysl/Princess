@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
 
-    public GameObject Settings, MainPanel;
+    public GameObject Credits, MainPanel;
 
 
     // Start is called before the first frame update
@@ -35,12 +35,15 @@ public class MainMenu : MonoBehaviour
 
 
 
-    public void Credits()
+    public void SetCredits()
     {
-       
+        if (Credits.active == true)
+                Credits.SetActive(false);
+        else 
+            Credits.SetActive(true);
     }
 
-    
+
     public void Close()
     {
         Application.Quit();
@@ -50,5 +53,16 @@ public class MainMenu : MonoBehaviour
         PlayerPrefs.DeleteAll();
         SceneManager.LoadScene(index);
         
+    }
+
+    public void SwipePages()
+    {
+        /*if(currPage == maxPages){
+            ;
+        }
+        Debug.Log("SwipePages");
+        currPage += 1;
+        Pages.pageToDisplay = currPage;
+        pageNum.text = $"{currPage} of {maxPages}";*/
     }
 }
