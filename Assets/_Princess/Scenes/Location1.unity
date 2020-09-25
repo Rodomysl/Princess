@@ -3988,6 +3988,14 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 12c3b793ced49684586c41565ce596f7, type: 2}
+    - target: {fileID: 4367174196713647483, guid: 910959aa865ff62439b3de5a98577327, type: 3}
+      propertyPath: m_Text
+      value: "...So, dude, I'll pop in the castle, sneak by the fat lizard and show
+        that princess the real flame. Then I'll ride further to Brunehilda. \n\nDo
+        you remember Brunhilda of Roargand? We called her Brunhilda the Wide-gated.
+        And of course, I won't save the princess. What for? I don't care, it's dull.
+        \n\nAh, Charlie, I do miss you.."
+      objectReference: {fileID: 0}
     - target: {fileID: 4367174197415473728, guid: 910959aa865ff62439b3de5a98577327, type: 3}
       propertyPath: UI
       value: 
@@ -4000,6 +4008,10 @@ PrefabInstance:
       propertyPath: sound
       value: 
       objectReference: {fileID: 811079476}
+    - target: {fileID: 4367174197415473728, guid: 910959aa865ff62439b3de5a98577327, type: 3}
+      propertyPath: pageCount
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 910959aa865ff62439b3de5a98577327, type: 3}
 --- !u!1001 &696452361

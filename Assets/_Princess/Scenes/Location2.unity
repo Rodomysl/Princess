@@ -2709,6 +2709,21 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: ae5862c29f4f8fb4b8e470b92304b11d, type: 2}
+    - target: {fileID: 4367174196713647483, guid: 910959aa865ff62439b3de5a98577327, type: 3}
+      propertyPath: m_Text
+      value: 'My sweet prince!
+
+        You fool didn''t tell servants to feed me
+        only with fresh hay!
+
+
+        P.S. If you hear that the mare from the next
+        stall foaled, I assure you that I have nothing to do with it.
+
+
+        Sincerely
+        yours, White Horse.'
+      objectReference: {fileID: 0}
     - target: {fileID: 4367174197415473728, guid: 910959aa865ff62439b3de5a98577327, type: 3}
       propertyPath: UI
       value: 
@@ -2721,6 +2736,10 @@ PrefabInstance:
       propertyPath: sound
       value: 
       objectReference: {fileID: 854185606}
+    - target: {fileID: 4367174197415473728, guid: 910959aa865ff62439b3de5a98577327, type: 3}
+      propertyPath: pageCount
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 910959aa865ff62439b3de5a98577327, type: 3}
 --- !u!1 &112610349

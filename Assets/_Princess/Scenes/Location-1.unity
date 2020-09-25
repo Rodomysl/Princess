@@ -6122,9 +6122,19 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4367174196713647483, guid: 910959aa865ff62439b3de5a98577327, type: 3}
+      propertyPath: m_Text
+      value: "Dear Victor!\n\nI am writing you to notify you of the strange news
+        I've heard. A princess captured by an evil creature asks to help her break
+        free from an abandoned castle. I don't know whether it's true but I can't
+        stay aside. What if nobody else helps her? \n\nSo, my dear friend, I should
+        go, figure it out and try to rescue her if needed. I don't know what is awaiting
+        me, but if I don't come back in a week, please, tell my wife Mary that I
+        love her..."
+      objectReference: {fileID: 0}
     - target: {fileID: 4367174197415473728, guid: 910959aa865ff62439b3de5a98577327, type: 3}
       propertyPath: pageCount
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4367174197415473728, guid: 910959aa865ff62439b3de5a98577327, type: 3}
       propertyPath: UI
