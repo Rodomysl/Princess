@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         //_anim = GetComponentInChildren<Animator>();
-        _anim = animTrans;
+        _anim = girlAnim;
         _controller = GetComponent<CharacterController>();
  
     }
