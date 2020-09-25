@@ -44,7 +44,7 @@ public class UI : MonoBehaviour
 
     public void SetPages(int pagesCount, string text) //enter text
     {
-        Debug.Log("SetPages");
+        
         currTreasure.animator.SetBool ("OpenLetter", true);
         sounds.PlayLetterSound();
         //Panel.SetActive(true);
@@ -61,6 +61,7 @@ public class UI : MonoBehaviour
         if(currPage == maxPages){
             currTreasure.animator.SetBool ("OpenLetter", false);
         }
+        Debug.Log("SwipePages");
         currPage += 1;
         Pages.pageToDisplay = currPage;
         pageNum.text = $"{currPage} of {maxPages}";

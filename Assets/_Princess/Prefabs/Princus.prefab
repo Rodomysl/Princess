@@ -2839,6 +2839,7 @@ MonoBehaviour:
   pageCount: 4
   animator: {fileID: 4183765057251181751, guid: 707a5f56fb0074840b1962060f07e2dd, type: 3}
   isCrown: 1
+  sound: {fileID: 933592795503025999, guid: 707a5f56fb0074840b1962060f07e2dd, type: 3}
   items:
   - {fileID: 11400000, guid: 3ea4d64f34a2e68428316b6a09e0a4eb, type: 2}
   letter: {fileID: 4367174196713647483}

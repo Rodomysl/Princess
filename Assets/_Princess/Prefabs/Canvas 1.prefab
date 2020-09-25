@@ -1350,7 +1350,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4183765057496220626
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1530,7 +1530,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fb77dba37f361e458dafc85e6224a2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds: {fileID: 9071645734607132607, guid: acf940ea046d1494db585e9dd2f2fb73, type: 3}
+  sounds: {fileID: 933592795503025999}
   Pages: {fileID: 4183765057028553880}
   pageNum: {fileID: 4183765057874805379}
   crownCounter: {fileID: 4183765056538444432}
