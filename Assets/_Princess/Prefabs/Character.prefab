@@ -313,7 +313,7 @@ GameObject:
   - component: {fileID: 5147997813634144978}
   - component: {fileID: 1905646603}
   - component: {fileID: 1905646599}
-  - component: {fileID: 6475720934771636711}
+  - component: {fileID: 4722844169245204100}
   m_Layer: 8
   m_Name: Character
   m_TagString: Player
@@ -402,7 +402,7 @@ MonoBehaviour:
   gravity: 20
   girlAnim: {fileID: 5382381731788681933}
   animDragon: {fileID: 967090979846345023}
-  animTrans: {fileID: 6475720934771636711}
+  animTrans: {fileID: 0}
   FootstepsSource: {fileID: 1064664977085340721}
   isDragon: 0
 --- !u!136 &1905646603
@@ -439,7 +439,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   collectedCrowns: 0
---- !u!95 &6475720934771636711
+--- !u!95 &4722844169245204100
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
