@@ -32424,15 +32424,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4367174196027777351, guid: 910959aa865ff62439b3de5a98577327, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.57
+      value: -23.04
       objectReference: {fileID: 0}
     - target: {fileID: 4367174196027777351, guid: 910959aa865ff62439b3de5a98577327, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.58
+      value: 5.33
       objectReference: {fileID: 0}
     - target: {fileID: 4367174196027777351, guid: 910959aa865ff62439b3de5a98577327, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 23.44
+      value: 15.38
       objectReference: {fileID: 0}
     - target: {fileID: 4367174196027777351, guid: 910959aa865ff62439b3de5a98577327, type: 3}
       propertyPath: m_LocalRotation.x
@@ -32754,6 +32754,19 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 3fddc59a5461de8499d12f5cc1814053, type: 2}
+    - target: {fileID: 4367174196713647483, guid: 910959aa865ff62439b3de5a98577327, type: 3}
+      propertyPath: m_Text
+      value: 'Dear sender!
+
+
+        If you can read, we would like to tell you thay
+        your letter was not sent as the postman fell ill. The plague!
+
+
+        If
+        you can''t read, please, slap your lazy literate servant to make him read
+        the letter.'
+      objectReference: {fileID: 0}
     - target: {fileID: 4367174197415473728, guid: 910959aa865ff62439b3de5a98577327, type: 3}
       propertyPath: isCrown
       value: 1
@@ -32770,6 +32783,10 @@ PrefabInstance:
       propertyPath: sound
       value: 
       objectReference: {fileID: 401253425}
+    - target: {fileID: 4367174197415473728, guid: 910959aa865ff62439b3de5a98577327, type: 3}
+      propertyPath: pageCount
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 910959aa865ff62439b3de5a98577327, type: 3}
 --- !u!4 &1810415450 stripped

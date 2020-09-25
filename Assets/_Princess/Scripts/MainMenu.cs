@@ -33,6 +33,14 @@ public class MainMenu : MonoBehaviour
         
     }
 
+
+
+    public void Credits()
+    {
+       
+    }
+
+    
     public void Close()
     {
         Application.Quit();

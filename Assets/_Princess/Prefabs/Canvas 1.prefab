@@ -1750,7 +1750,7 @@ MonoBehaviour:
   TreasureSound: {fileID: 0}
   LetterSound: {fileID: 8300000, guid: c069dde6d2705a24dbbd88982655178f, type: 3}
   RatSound: {fileID: 8300000, guid: 4c9cd1960cd2db349bb3c5917d6bb5a9, type: 3}
-  WalkSound: {fileID: 8300000, guid: 6019c07404fa7e3428890e322e8db4ce, type: 3}
+  WalkSound: {fileID: 0}
 --- !u!1 &4183765057874805380
 GameObject:
   m_ObjectHideFlags: 0

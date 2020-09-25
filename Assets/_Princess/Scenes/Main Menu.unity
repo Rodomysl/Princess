@@ -222,9 +222,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1067417839514458835, guid: ae5db051391048e42b14c797deaf6b5d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -190.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1067417839514458835, guid: ae5db051391048e42b14c797deaf6b5d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -128.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1067417839514458835, guid: ae5db051391048e42b14c797deaf6b5d, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1731.9966
+      objectReference: {fileID: 0}
+    - target: {fileID: 1067417839514458835, guid: ae5db051391048e42b14c797deaf6b5d, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1553.8442
+      objectReference: {fileID: 0}
     - target: {fileID: 2203648857791417752, guid: ae5db051391048e42b14c797deaf6b5d, type: 3}
       propertyPath: m_Name
       value: Credits
+      objectReference: {fileID: 0}
+    - target: {fileID: 2203648857791417752, guid: ae5db051391048e42b14c797deaf6b5d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2757186454340524321, guid: ae5db051391048e42b14c797deaf6b5d, type: 3}
       propertyPath: m_Transition
