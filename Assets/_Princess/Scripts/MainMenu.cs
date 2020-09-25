@@ -6,6 +6,7 @@ public class MainMenu : MonoBehaviour
 {
 
     public GameObject Credits, MainPanel;
+    private bool credintActive = false;
 
 
     // Start is called before the first frame update
@@ -37,10 +38,16 @@ public class MainMenu : MonoBehaviour
 
     public void SetCredits()
     {
-        if (Credits.active == true)
+        if (credintActive == true)
+        {
                 Credits.SetActive(false);
+                credintActive = false;
+        }
         else 
+        {
+            credintActive = true;
             Credits.SetActive(true);
+        }
     }
 
 
