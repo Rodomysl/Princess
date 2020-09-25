@@ -9,7 +9,7 @@ public class Main : MonoBehaviour
 
     public GameObject[] spawnPoints;
     static private int spawnNum = 0;
-    public TMP_Text crowns;
+    public UI ui;
     public GameObject PauseScreen, Player;
 
 
@@ -51,21 +51,23 @@ public class Main : MonoBehaviour
 
     public void Open_Scene(int index ){
         
+        Save_Prefs();
         SceneManager.LoadScene(index);
         
     }
 
+    public void Save_Prefs(){
 
-    
+        Debug.Log("Save!" + ui.getCrown());
+         Debug.Log( PlayerPrefs.GetInt("Crowns"));
 
-
-    private void Save_Prefs(){
-     
-        if(PlayerPrefs.HasKey("Crowns")) // проверяем ключ
+        PlayerPrefs.HasKey("Crowns");
+        PlayerPrefs.SetInt("Crowns", ui.getCrown());
+        /*if(PlayerPrefs.HasKey("Crowns")) // проверяем ключ
         {
-            PlayerPrefs.SetInt("Crowns", int.Parse(crowns.text));
+            PlayerPrefs.SetInt("Crowns", ui.getCrown());
         }
-        else PlayerPrefs.SetInt("Crowns", 0);
+        else PlayerPrefs.SetInt("Crowns", 0);*/
     
     }
 

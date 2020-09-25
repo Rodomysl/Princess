@@ -19,6 +19,9 @@ public class Interactable : MonoBehaviour {
 	bool hasInteracted = false;	// Have we already interacted with the object?
 	private Animator _anim;
 	public Treasure Prince;
+	public MainDoor door = null;
+	
+	
 	//public int letterCount;
 
 	void Update ()
@@ -73,6 +76,20 @@ public class Interactable : MonoBehaviour {
 				_anim.SetBool("Open", true);
 			}
 				
+		}
+		if (this.gameObject.CompareTag("MainDoor"))
+		{
+			door.show();
+			if(door.isAllCrown())
+				{
+					_anim = GetComponentInParent<Animator>();
+					if (_anim.GetBool("Open"))
+					{
+						_anim.SetBool("Open", false);
+					} else {
+						_anim.SetBool("Open", true);
+					}
+				}
 		}
 	}
 

@@ -27,10 +27,15 @@ public class CollisonSceneChange : MonoBehaviour {
 		{
             //Debug.Log("Collision Detected It Works");
             //SceneManager.LoadScene(loadScene);
+            
             mainScr.setSpawn(spawnNum);
+            //mainScr.Save_Prefs();
             mainScr.Open_Scene(loadScene);
 
         }
     }
+
+    
+
 
 }

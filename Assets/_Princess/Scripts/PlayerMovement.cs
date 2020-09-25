@@ -11,23 +11,30 @@ public class PlayerMovement : MonoBehaviour
     public float turnSpeed = 180f;
     public float jumpSpeed = 8.0f;
     public float gravity = 20.0f;
+    public Animator girlAnim, animDragon, animTrans;
     private Animator _anim;
     private CharacterController _controller;
+
     public AudioSource FootstepsSource;
+    public bool isDragon = false;
+    
 	
  
  
     // Start is called before the first frame update
     void Start()
     {
-        _anim = GetComponentInChildren<Animator>();
+        //_anim = GetComponentInChildren<Animator>();
+        _anim = girlAnim;
         _controller = GetComponent<CharacterController>();
  
     }
+
+
     // Update is called once per frame
     void Update()
     {
-   
+        if(!isDragon){
           float input_x = Input.GetAxisRaw("Horizontal");
           float input_y = Input.GetAxisRaw("Vertical");
  
@@ -65,16 +72,20 @@ public class PlayerMovement : MonoBehaviour
 			}
 
             //    Debug.Log(isRunning);
-            
-            
-				
-				
         }
         moveDirection.y -= gravity * Time.deltaTime;
         _controller.Move(moveDirection * Time.deltaTime);
-		
-		
- 
+        }
+
+    }
+
+    public void setMutation(){
+        Debug.Log("Mutation");
+        isDragon = true;
+        _anim = animTrans;
+        _anim.SetTrigger("Mutation");
+
+
     }
 	
        public void PlayWalkSound(){ 

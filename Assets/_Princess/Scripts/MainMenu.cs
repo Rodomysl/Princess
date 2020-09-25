@@ -38,8 +38,8 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
-     public void Open_Scene(int index ){
-        
+     public void Open_Scene(int index ){       
+        PlayerPrefs.DeleteAll();
         SceneManager.LoadScene(index);
         
     }

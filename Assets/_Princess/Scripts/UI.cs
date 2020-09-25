@@ -12,12 +12,13 @@ public class UI : MonoBehaviour
     public TMP_Text Pages, pageNum, crownCounter;
     public GameObject Panel;
     public Main main;
-    private int currPage = 1, maxPages, crownCount = 0;
+    private int currPage = 1, maxPages, crownCount;
     private Treasure currTreasure;
 
     public void setCrown(int count){
        // Debug.Log(count + "crowcount");
         //Debug.Log(crownCounter.text);
+        
         crownCount = count;
         crownCounter.text = crownCount.ToString();
     }
@@ -33,6 +34,12 @@ public class UI : MonoBehaviour
     private void Start() {
         //crownCounter.text = crownCount.ToString();
         //Debug.Log(crownCounter.text +"start");
+        if(PlayerPrefs.HasKey("Crowns")) // проверяем ключ
+        {
+            crownCount = PlayerPrefs.GetInt("Crowns");
+        }
+        else crownCount = 0;
+        setCrown(crownCount);
 
     }
 

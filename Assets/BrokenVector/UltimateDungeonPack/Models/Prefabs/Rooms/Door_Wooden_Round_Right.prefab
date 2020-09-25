@@ -145,6 +145,7 @@ MonoBehaviour:
   radius: 3
   interactionTransform: {fileID: 8309054533065669574}
   Prince: {fileID: 0}
+  door: {fileID: 0}
 --- !u!114 &1991777144
 MonoBehaviour:
   m_ObjectHideFlags: 0
