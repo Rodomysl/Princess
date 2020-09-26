@@ -53,15 +53,16 @@ public class Main : MonoBehaviour
     public void Open_Scene(int index ){
         
         Save_Prefs();
+       
         SceneManager.LoadScene(index);
         
     }
 
     public void Save_Prefs(){
 
-        Debug.Log("Save!" + ui.getCrown());
+        /*Debug.Log("Save!" + ui.getCrown());
          Debug.Log( PlayerPrefs.GetInt("Crowns"));
-
+*/
         PlayerPrefs.HasKey("Crowns");
         PlayerPrefs.SetInt("Crowns", ui.getCrown());
         /*if(PlayerPrefs.HasKey("Crowns")) // проверяем ключ

@@ -3158,6 +3158,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4183765057496220631, guid: 707a5f56fb0074840b1962060f07e2dd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4183765057759135507, guid: 707a5f56fb0074840b1962060f07e2dd, type: 3}
       propertyPath: m_Name
       value: Canvas 1
@@ -3434,6 +3438,7 @@ MonoBehaviour:
   radius: 3
   interactionTransform: {fileID: 0}
   Prince: {fileID: 0}
+  door: {fileID: 0}
 --- !u!1001 &606097853
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9717,6 +9722,7 @@ MonoBehaviour:
   radius: 3
   interactionTransform: {fileID: 1572930925}
   Prince: {fileID: 0}
+  door: {fileID: 0}
 --- !u!1001 &1591306840
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9812,6 +9818,7 @@ MonoBehaviour:
   radius: 3
   interactionTransform: {fileID: 1598980072}
   Prince: {fileID: 0}
+  door: {fileID: 0}
 --- !u!114 &1598980074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14880,6 +14887,7 @@ MonoBehaviour:
   radius: 3
   interactionTransform: {fileID: 2066053342}
   Prince: {fileID: 0}
+  door: {fileID: 0}
 --- !u!114 &2066053344
 MonoBehaviour:
   m_ObjectHideFlags: 0

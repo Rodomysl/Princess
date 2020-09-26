@@ -11,7 +11,10 @@ public class MainMenu : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {/*
+    
+    {
+        
+        /*
          if(!PlayerPrefs.HasKey("EffectsVolume"))
         {
             PlayerPrefs.SetFloat("EffectsVolume", 5f) ;
@@ -26,6 +29,9 @@ public class MainMenu : MonoBehaviour
             MusicVolume.text = PlayerPrefs.GetFloat("MusicVolume").ToString();
 */
 
+    }
+    private void Awake() {
+        
     }
 
     // Update is called once per frame
@@ -57,6 +63,7 @@ public class MainMenu : MonoBehaviour
      public void Open_Scene(int index ){       
         PlayerPrefs.DeleteAll();
         SceneManager.LoadScene(index);
+
         
     }
 

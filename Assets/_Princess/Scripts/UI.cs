@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 
@@ -14,26 +15,18 @@ public class UI : MonoBehaviour
     public Main main;
     private int currPage = 1, maxPages, crownCount;
     private Treasure currTreasure;
+    
 
-    public void setCrown(int count){
-       // Debug.Log(count + "crowcount");
-        //Debug.Log(crownCounter.text);
+
+
+     private void Awake() {
         
-        crownCount = count;
-        crownCounter.text = crownCount.ToString();
     }
 
-    public int getCrown(){
-        return crownCount;
-    }
-
-    public void setTreasure(Treasure treasure){
-        currTreasure = treasure;
-    }
 
     private void Start() {
         //crownCounter.text = crownCount.ToString();
-        //Debug.Log(crownCounter.text +"start");
+        //Debug.Log(crownCounter.text +"start");;
         if(PlayerPrefs.HasKey("Crowns")) // проверяем ключ
         {
             crownCount = PlayerPrefs.GetInt("Crowns");
@@ -47,6 +40,22 @@ public class UI : MonoBehaviour
     void Update()
     {
         //Debug.Log(crownCount + "update");
+    }
+
+        public void setCrown(int count){
+       // Debug.Log(count + "crowcount");
+        //Debug.Log(crownCounter.text);
+        
+        crownCount = count;
+        crownCounter.text = crownCount.ToString();
+    }
+
+    public int getCrown(){
+        return crownCount;
+    }
+
+    public void setTreasure(Treasure treasure){
+        currTreasure = treasure;
     }
 
     public void SetPages(int pagesCount, string text) //enter text
